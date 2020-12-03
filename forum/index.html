@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Kebun Berdaya</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+#navbarsection{
+  background-color: #05BA58;
+}
+.navbarCostum{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#profilesInfo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color:#d5f9da;
+  filter: blur(15px);
+}
+#avatarCSS{
+  width: 350px;
+}
+#forumSection{
+  background-color: #ebfdf1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  filter: blur(15px);
+}
+#boxdsgn{
+  border-radius: 40px;
+}
+#forumboxdsgn-header{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #05ba58;
+  color: #d5f9da;
+}
+#FooterSIKB{
+  background-color: #F1FBF6;
+  filter: blur(15px);
+}
+.modal-open{
+  background-color: #05BA58;
+  padding-left: 19px;
+}
+</style>
+<body>
+
+<!--NAVBAR-->
+<section id="navbarsection">
+  <nav class="navbar navbar-expand-lg navbar-light secondary-color lighten-1">
+      <a class="navbar-brand navbarCostum" href="">
+          <img src="../asset/sikb-logo.png" height="100" class="d-inline-block"
+            alt="mdb logo">
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+        aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-white" id="navbarSupportedContent-555">
+        <ul class="navbar-nav mr-auto">
+          
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link active" href="../">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="/aboutUs/">Tentang Kami</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--/.Navbar -->
+  </section>
+
+<section id="tempSection">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="SIKBModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content" style="border-radius:20px;">
+        <div style="padding: 20px;" class="text-center">
+          <h3 id="SIKBModalLongTitle"><b>Forum SiKB Segera Hadir</b></h3>
+        </div>
+        <div>
+          <div style="padding:20px;" class="text-center">
+            <h3>Fitur ini sedang tahap pengembangan, Mohon Maaf atas ketidaknyamanannya</h3>
+          </div>
+        </div>
+        <div style="padding: 20px;" class="text-center">
+          <a href="../index.html"><button style="border-radius: 13px;" type="button" class="btn btn-danger">Kembali</button></a>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profilesInfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <div>
+        <img id="avatarCSS" src="../asset/avatar.png" class="rounded-circle" alt="profilePictures"></div>
+      </div>
+      <div class="col-lg-8">
+        <div>
+          <br><br>
+            <h1><span><b>USERNAME</b></span></h1>
+        </div>
+        <div>
+            <h2><b>Nama Lengkap</b></h2>
+        </div>
+        <div>
+          <h3>Alamat</h3>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="BuatForumSection">
+  <div class="modal fade" id="CreateForum" tabindex="-1" role="dialog" aria-labelledby="SIKBModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content" style="border-radius:20px;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SIKBModalLongTitle"><b>Buat Forum Baru</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="judulForum"><b> Judul Forum</b></label>
+              <input style="border-radius: 13px;" name="titleForum" type="text" class="form-control" id="judulForum" placeholder="Bagaimana Cara menanam Tomat dengan baik?" required>
+            </div>
+            <div class="form-group">
+                <label for="isiForum"><b> Forum</b></label>
+                <textarea style="border-radius: 13px;" class="form-control" name="contentForum" id="isiForum" rows="5" placeholder="Isi Forum..." required></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button style="border-radius: 13px;" type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+          <button style="border-radius: 13px;" type="submit" name="submit" class="btn btn-success">Simpan Forum</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="forumSection">
+<!-- Create Forum -->
+  <div class="container">
+    <div>
+      <h1 class="text-center"><b>FORUM KEBUN BERDAYA</b></h1>
+    </div>
+    <div style="padding-top: 10px;padding-bottom: 10px;" class="text-center">
+      <button style="border-radius: 13px;" type="button" class="btn btn-primary btn-lg text-center" data-toggle="modal" data-target="#CreateForum">Buat Forum</button>
+      <a href=""><button style="border-radius: 13px;" type="button" class="btn btn-danger btn-lg text-center">Lihat Forumku</button></a>
+    </div>
+  </div>
+  <div class="container-fluid mt-100">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="boxdsgn" class="card mb-4">
+                <div id="forumboxdsgn-header" class="card-header">
+                    <div class="media flex-wrap w-100 align-items-center"> <img src="../asset/avatar.png" class="d-block ui-w-40 rounded-circle" alt="picture" style="width:100px;">
+                        <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true"><b>Adhi</b></a>
+                            <div class="small">2 days ago</div>
+                        </div>
+                        <div class="small ml-3">
+                            <div>Member since <strong>19/11/2020</strong></div>
+                            <div><strong>1</strong> posts</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="boxdsgn" class="card-body">
+                  <h3><b>Title</b></h3>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div id="boxdsgn" class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+                    <div class="px-4 pt-3"><span class="text-muted d-inline-flex align-items-center align-middle ml-4"> <i class="fa fa-eye text-muted fsize-3"></i>&nbsp; <span class="align-middle">200</span></span></div>
+                    <div class="px-4 pt-3" ><a href="../forum/comments.html"><button style="border-radius: 13px;" type="button" class="btn btn-success"><i class="ion ion-md-create"></i> Lihat Forum ini</button></a> <button style="border-radius: 13px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#ReplyForum"><i class="ion ion-md-create"></i>Balas</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="ReplySection">
+  <div class="modal fade" id="ReplyForum" tabindex="-1" role="dialog" aria-labelledby="ModalTitleSIKB" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content" style="border-radius:20px;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalTitleSIKBLong"><b>Berikan Komentar Anda</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="judulForum"><b> Judul Forum</b></label>
+              <input style="border-radius: 13px;" name="titleForum" type="text" class="form-control" id="judulForum" placeholder="Title" readonly>
+            </div>
+            <div class="form-group container">
+              <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h4>
+            </div>
+            <div>
+              <textarea style="border-radius: 13px;" class="form-control" name="contentForum" id="isiForum" rows="5" placeholder="Ketik komentar anda" required></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button style="border-radius: 13px;" type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
+          <button style="border-radius: 13px;" type="submit" name="submit" class="btn btn-success">Kirim</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+<section>
+
+  <section id="FooterSIKB">
+    <footer>
+      <div style="padding-top: 20px;padding-bottom: 30px;" class="container">
+        <div class="row">
+          <div class="col-lg-4 text-left">
+            <div>
+              <h4>Tim :</h4>
+            </div>
+            <div>
+              <i class="fa fa-users" aria-hidden="true"> Tim Wonderfull</i>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div>
+              <h4>Aplikasi Android</h4>
+            </div>
+            <div>
+              <i class="fa fa-android" aria-hidden="true"> <a style="color: #05BA58;text-decoration: none;" href="">Download</a></i>
+            </div>
+          </div>
+          <div class="col-lg-4 text-right">
+            <div>
+              <h4>Kontak kami :</h4>
+            </div>
+            <div>
+              <i class="fa fa-envelope" aria-hidden="true"> sikb@kebunberdaya.id</i>
+            </div>
+            <div>
+              <a target="blank" style="color: black;text-decoration: none;" href="https://www.instagram.com/kebunberdaya/" target="blank">
+              <i class="fa fa-instagram" aria-hidden="true"> kebunberdaya</i>
+              </a>
+            </div>
+            <div>
+              <i class="fa fa-map-marker" aria-hidden="true"> Jl. Gatot Subroto I No.mor 38, Tonja, Kec. Denpasar Utara, Kota Denpasar, Bali 80239</i>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div style="padding-top: 20px;padding-bottom: 50px;background-color: #05BA58;color: aliceblue;" class="container-fluid text-center">
+          &COPY;2020 Copyright: <a style="color: aliceblue; text-decoration: none;" href="https://kebunberdaya.id/">kebunberdaya.id</a>
+        </div>
+    </footer>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+          $('#myModal').modal({
+            backdrop: 'static'
+        }); 
+      });
+      </script>
+</body>
+</html>
