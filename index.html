@@ -8,26 +8,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
+body{
+  background-color: #05BA58;
+  font-family:'Courier New', Courier, monospace;
+}
 
 #navbarsection{
   background-color: #05BA58;
-  
+  transition: 0.8s;
+}
+#navbarsection:hover{
+  background-color: #0dbb5e;
+  transition: 0.8s;
 }
 .navbarCostum{
   padding-top: 0px;
   padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+#nav-effect-active{
+  color: #204222;
+  transition: 0.8s;
+  font-weight: bold;
+  font-size: large;
+}
+#nav-effect{
+  transition: 0.8s;
+  color: white;
+  font-size: large;
+}
+#nav-effect:hover{
+  transition: 0.8s;
+  color: #204222;
+}
+
 #AppsArea{
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: white;
 }
 #FooterSIKB{
-  background-color: #F1FBF6;
+  background-color: #05BA58;
 }
 #YoutubeArea{
   padding-top: 50px;
   padding-bottom: 50px;
   background-color:#f1fbf6;
+}
+#btn-youtube{
+  background-color: #bd1010;
+  border: #204222;
+  color: white;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+#btn-youtube:hover{
+  background-color: #05BA58;
+  border: #204222;
+  border-radius: 15px;
+  transition: 0.8s;
+}
+#playstore-effect{
+  transition: 0.8s;
+}
+#playstore-effect:hover{
+  transition: 0.8s;
+  width: 180px;
+}
+
+#footerIcon{
+  color:white;
+  text-decoration: none;
+  transition: 1s;
+}
+#footerIcon:hover{
+  color:#204222;
+  transition: 0.8s;
+  font-size:large;
+  text-decoration: none;
 }
 </style>
 <body>
@@ -42,24 +101,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-white" id="navbarSupportedContent-555">
-          <ul class="navbar-nav mr-auto">
-            
-          </ul>
-          <ul class="navbar-nav ml-auto nav-flex-icons">
+          <ul class="navbar-nav ml-auto nav-flex-icons navbarCostum">
             <li class="nav-item">
-              <a class="nav-link waves-effect waves-light">
+              <a id="nav-effect-active" class="nav-link active" href="">Home
               </a>
             </li>
             <li class="nav-item">
-              <a style="color: white;" class="nav-link active" href="../">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a id="nav-effect" class="nav-link" href="forum/">Forum</a>
             </li>
             <li class="nav-item">
-              <a style="color: white;" class="nav-link" href="forum/">Forum</a>
-            </li>
-            <li class="nav-item">
-              <a style="color: white;" class="nav-link" href="/aboutUs/">Tentang Kami</a>
+              <a id="nav-effect" class="nav-link" href="/aboutUs/">Tentang Kami</a>
             </li>
           </ul>
         </div>
@@ -120,44 +171,46 @@
 </section>
 <!--Launch Apps-->
 <section id="AppsArea">
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-lg-4 text-center flex-center">
-      <img width="440px" class="text-center mx-auto d-block img-fluid" src="asset/Android Apps.png" alt="sikbApps">
+      <img class="text-center mx-auto d-block img-fluid" src="asset/Android Apps.png" alt="sikbApps">
     </div>
     <div class="col-lg-8">
       <div style="padding-left: 40px;">
-        <br><br>
-        <h1>Halo <b>Banjartizen!</b></h1>
+        <br>
+        <h2>Halo <b>Banjartizen!</b></h2>
       </div>
       <div style="padding-left: 40px;padding-right: 40px;font-family:'Courier New', Courier, monospace">
-        <h2>Dimanapun kalian berada, kami tawarkan solusi terbaik untuk monitoring tanaman kalian, silahkan bergabung dengan kami dan <b>Download</b> Sekarang juga Android Apps SI-KB. Selamat Bergabung!</h2>
+        <h3>Dimanapun kalian berada, kami tawarkan solusi terbaik untuk monitoring tanaman kalian, silahkan bergabung dengan kami. </h3> <br>
+        <div style="margin-top: -1rem;"><h3><b>Download</b> Sekarang juga Android Apps SI-KB. Selamat Bergabung!</h3>
+        </div>
       </div>
-      <div style="padding-left: 40px;">
-        <button type="button" class="btn btn-success"><i class="fa fa-android" aria-hidden="true"></i> Download Apps</button>
+      <div style="padding-left: 33px;">
+        <a target="blank" href='https://play.google.com/store/apps/details?id=com.stikom.si_kb&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img id="playstore-effect" width="150px" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
       </div>
     </div>
   </div>
 </div>
 </section>
 <section id="YoutubeArea">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-lg-4 flex-center">
         <div style="padding-left: 40px;"><br>
-          <h1>Halo <b>Banjartizen!</b></h1>
+          <h2>Halo <b>Banjartizen!</b></h2>
         </div>
         <div style="padding-left: 40px;padding-right: 40px;font-family:'Courier New', Courier, monospace">
           <h2>Ingin Tips dan Trik dalam bertanam? langsung aja klik tombol dibawah</h2>
         </div>
         <div style="padding-left: 40px;">
-          <a target="blank" href="https://www.youtube.com/channel/UCK_i8zuD23kSDsx7nqCAGRw"><button type="button" class="btn btn-danger"><i class="fa fa-youtube-play" aria-hidden="true"></i> Kunjungi Youtube Kami</button></a>
+          <a target="blank" href="https://www.youtube.com/channel/UCK_i8zuD23kSDsx7nqCAGRw"><button type="button" class="btn btn-danger" id="btn-youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i> Kunjungi Youtube Kami</button></a>
         </div>
       </div>
       <div class="col-lg-8">
         <br>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe style="border-radius: 20px;" class="embed-responsive-item" src="https://www.youtube.com/embed/yX48C0HbWH0" allowfullscreen></iframe>
+        <div style="border-radius: 20px;"  class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yX48C0HbWH0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -166,42 +219,26 @@
 
 <section id="FooterSIKB">
   <footer>
-    <div style="padding-top: 20px;padding-bottom: 30px;" class="container">
-      <div class="row">
-        <div class="col-lg-4 text-left">
-          <div>
-            <h4>Tim :</h4>
-          </div>
-          <div>
-            <i class="fa fa-users" aria-hidden="true"> Tim Wonderfull</i>
-          </div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <div>
-            <h4>Aplikasi Android</h4>
-          </div>
-          <div>
-            <i class="fa fa-android" aria-hidden="true"> <a style="color: #05BA58;text-decoration: none;" href="">Download</a></i>
-          </div>
-        </div>
-        <div class="col-lg-4 text-right">
-          <div>
-            <h4>Kontak kami :</h4>
-          </div>
-          <div>
-            <i class="fa fa-envelope" aria-hidden="true"> sikb@kebunberdaya.id</i>
-          </div>
-          <div>
-            <a target="blank" style="color: black;text-decoration: none;" href="https://www.instagram.com/kebunberdaya/" target="blank">
-            <i class="fa fa-instagram" aria-hidden="true"> kebunberdaya</i>
-            </a>
-          </div>
-          <div>
-            <i class="fa fa-map-marker" aria-hidden="true"> Jl. Gatot Subroto I No.mor 38, Tonja, Kec. Denpasar Utara, Kota Denpasar, Bali 80239</i>
-          </div>
+    <div style="padding-top: 40px;" class="container">
+    <div class="row">
+      <div class="col-lg-12 flex-center">
+        <div class="flex-center mb-3 text-center">
+          <a target="blank" id="footerIcon" href="https://www.facebook.com/KebunBerdaya/">
+            <i class="fa fa-facebook-square fa-3x m-2" aria-hidden="true"></i>
+          </a>
+          <a target="blank" id="footerIcon" href="https://www.instagram.com/kebunberdaya/">
+            <i class="fa fa-instagram fa-3x m-2" aria-hidden="true"></i>
+          </a>
+          <a target="blank" id="footerIcon" href="https://g.page/banjartegehsari?share">
+            <i class="fa fa-map-marker fa-3x m-2" aria-hidden="true"></i>
+          </a>
+          <a target="blank" id="footerIcon" href="https://www.youtube.com/channel/UCK_i8zuD23kSDsx7nqCAGRw">
+            <i class="fa fa-youtube-play fa-3x m-2" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
+  </div>
       <div style="padding-top: 20px;padding-bottom: 50px;background-color: #05BA58;color: aliceblue;" class="container-fluid text-center">
         &COPY;2020 Copyright: <a style="color: aliceblue; text-decoration: none;" href="https://kebunberdaya.id/">kebunberdaya.id</a>
       </div>

@@ -9,12 +9,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
+body{
+  background-color: #05BA58;
+  font-family:'Courier New', Courier, monospace;
+}
 #navbarsection{
   background-color: #05BA58;
+  transition: 0.8s;
+}
+#navbarsection:hover{
+  background-color: #0dbb5e;
+  transition: 0.8s;
 }
 .navbarCostum{
   padding-top: 0px;
   padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#nav-effect-active{
+  color: #204222;
+  transition: 0.8s;
+  font-weight: bold;
+  font-size: large;
+}
+#nav-effect{
+  transition: 0.8s;
+  color: white;
+  font-size: large;
+}
+#nav-effect:hover{
+  transition: 0.8s;
+  color: #204222;
 }
 #profilesInfo{
   padding-top: 50px;
@@ -41,12 +67,23 @@
   color: #d5f9da;
 }
 #FooterSIKB{
-  background-color: #F1FBF6;
+  background-color: #05BA58;
   filter: blur(15px);
 }
 .modal-open{
   background-color: #05BA58;
   padding-left: 19px;
+}
+#footerIcon{
+  color:white;
+  text-decoration: none;
+  transition: 1s;
+}
+#footerIcon:hover{
+  color:#204222;
+  transition: 0.8s;
+  font-size:large;
+  text-decoration: none;
 }
 </style>
 <body>
@@ -63,30 +100,22 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-white" id="navbarSupportedContent-555">
-        <ul class="navbar-nav mr-auto">
-          
-        </ul>
-        <ul class="navbar-nav ml-auto nav-flex-icons">
+        <ul class="navbar-nav ml-auto nav-flex-icons navbarCostum">
           <li class="nav-item">
-            <a class="nav-link waves-effect waves-light">
+            <a id="nav-effect" class="nav-link active" href="../">Home
             </a>
           </li>
           <li class="nav-item">
-            <a style="color: white;" class="nav-link active" href="../">Home
-              <span class="sr-only">(current)</span>
-            </a>
+            <a id="nav-effect-active" class="nav-link" href="">Forum</a>
           </li>
           <li class="nav-item">
-            <a style="color: white;" class="nav-link" href="">Forum</a>
-          </li>
-          <li class="nav-item">
-            <a style="color: white;" class="nav-link" href="/aboutUs/">Tentang Kami</a>
+            <a id="nav-effect" class="nav-link" href="../aboutUs/">Tentang Kami</a>
           </li>
         </ul>
       </div>
     </nav>
     <!--/.Navbar -->
-  </section>
+</section>
 
 <section id="tempSection">
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="SIKBModalCenterTitle" aria-hidden="true">
@@ -101,7 +130,7 @@
           </div>
         </div>
         <div style="padding: 20px;" class="text-center">
-          <a href="../index.html"><button style="border-radius: 13px;" type="button" class="btn btn-danger">Kembali</button></a>
+          <a href="../"><button style="border-radius: 13px;" type="button" class="btn btn-danger">Kembali</button></a>
         </div>
       </form>
       </div>
@@ -237,49 +266,33 @@
   </div>
 <section>
 
-  <section id="FooterSIKB">
+<section id="FooterSIKB">
     <footer>
-      <div style="padding-top: 20px;padding-bottom: 30px;" class="container">
-        <div class="row">
-          <div class="col-lg-4 text-left">
-            <div>
-              <h4>Tim :</h4>
-            </div>
-            <div>
-              <i class="fa fa-users" aria-hidden="true"> Tim Wonderfull</i>
-            </div>
-          </div>
-          <div class="col-lg-4 text-center">
-            <div>
-              <h4>Aplikasi Android</h4>
-            </div>
-            <div>
-              <i class="fa fa-android" aria-hidden="true"> <a style="color: #05BA58;text-decoration: none;" href="">Download</a></i>
-            </div>
-          </div>
-          <div class="col-lg-4 text-right">
-            <div>
-              <h4>Kontak kami :</h4>
-            </div>
-            <div>
-              <i class="fa fa-envelope" aria-hidden="true"> sikb@kebunberdaya.id</i>
-            </div>
-            <div>
-              <a target="blank" style="color: black;text-decoration: none;" href="https://www.instagram.com/kebunberdaya/" target="blank">
-              <i class="fa fa-instagram" aria-hidden="true"> kebunberdaya</i>
-              </a>
-            </div>
-            <div>
-              <i class="fa fa-map-marker" aria-hidden="true"> Jl. Gatot Subroto I No.mor 38, Tonja, Kec. Denpasar Utara, Kota Denpasar, Bali 80239</i>
-            </div>
+      <div style="padding-top: 40px;" class="container">
+      <div class="row">
+        <div class="col-lg-12 flex-center">
+          <div class="flex-center mb-3 text-center">
+            <a target="blank" id="footerIcon" href="https://www.facebook.com/KebunBerdaya/">
+              <i class="fa fa-facebook-square fa-3x m-2" aria-hidden="true"></i>
+            </a>
+            <a target="blank" id="footerIcon" href="https://www.instagram.com/kebunberdaya/">
+              <i class="fa fa-instagram fa-3x m-2" aria-hidden="true"></i>
+            </a>
+            <a target="blank" id="footerIcon" href="https://g.page/banjartegehsari?share">
+              <i class="fa fa-map-marker fa-3x m-2" aria-hidden="true"></i>
+            </a>
+            <a target="blank" id="footerIcon" href="https://www.youtube.com/channel/UCK_i8zuD23kSDsx7nqCAGRw">
+              <i class="fa fa-youtube-play fa-3x m-2" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
+    </div>
         <div style="padding-top: 20px;padding-bottom: 50px;background-color: #05BA58;color: aliceblue;" class="container-fluid text-center">
           &COPY;2020 Copyright: <a style="color: aliceblue; text-decoration: none;" href="https://kebunberdaya.id/">kebunberdaya.id</a>
         </div>
     </footer>
-  </section>
+</section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
